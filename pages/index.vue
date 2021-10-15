@@ -1,7 +1,14 @@
 <template>
-  <Tutorial/>
+  <div class="flex flex-col justify-center">
+      <Welcome />
+  </div>
 </template>
 
 <script>
-export default {}
+import '~/assets/icons'
+
+export default {
+}
 </script>
+
+<style></style>

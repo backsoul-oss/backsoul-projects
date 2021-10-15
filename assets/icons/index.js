@@ -1,0 +1,11 @@
+/* eslint-disable */
+require('./angular')
+require('./facebook')
+require('./github')
+require('./ionic')
+require('./javascript')
+require('./laravel')
+require('./nuxt')
+require('./python')
+require('./twitter')
+require('./typescript')
