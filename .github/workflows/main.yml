@@ -27,6 +27,19 @@ jobs:
       - name: 'Releases the container'
         run: heroku container:release web --app backsoul-projects
 
+      - name: 'Sending SMS Notification'
+        uses: twilio-labs/actions-sms@v1
+        with:
+          fromPhoneNumber: ${{ secrets.TWILIO_PHONE_NUMBER }}
+          toPhoneNumber: ${{ secrets.MY_PHONE_NUMBER }}
+          message: 'Una nueva versión de (proyectos backsoul) ya esta en producción 🎉'
+        env:
+          TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
+          TWILIO_API_KEY: ${{ secrets.TWILIO_API_KEY }}
+          TWILIO_API_SECRET: ${{ secrets.TWILIO_API_SECRET }}
+
+
+
 
 
 ### ⬆ IMPORTANT PART ⬆ ###
