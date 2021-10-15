@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web:
+    container_name: backsoul_projects
+    image: backsoul/projects
+    build: .
+    volumes:
+      - .:/projects
+    ports:
+      - "80:3000"
