@@ -1,7 +1,7 @@
 <template>
   <div class="h-screen items-center justify-center">
     <div class="grid grid-cols-2 h-screen items-center justify-center">
-      <img :src="require(`~/assets/img/character-skills.png`)" class="image" />
+      <img :src="require(`~/assets/img/character-skills.png`)" class="image"  draggable="false"/>
       <div class="flex justify-start flex-col items-center">
         <h1 class="font-bold text-2xl">Motivación</h1>
         <p class="mt-5 font-sm">
